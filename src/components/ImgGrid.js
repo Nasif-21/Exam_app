@@ -2,14 +2,19 @@ import React, { Component } from 'react'
 //import App from '../App'
 
 
-export default class extends Component {
+export default  class extends Component {
+  
   render() {
+   
     return (
       <div className="container mt-5">
-      <table className="table custom-table">
+      <table className="table table-hover">
         <tbody>
+        
+
           <tr>
             <td className="col-5" rowSpan="2" colSpan="3">
+              
             <img src="image-11.jpg" alt="Large Column" className="table-image" />
             </td>
             <td className="small-column"><img src={`image-1.jpg`} alt="Add image"  className="table-image" /></td>
@@ -27,12 +32,15 @@ export default class extends Component {
             <td className="small-column"><img src={`image-9.jpg`} alt="Add image"  className="table-image" /></td>
             <td className="small-column"><img src={`image-10.jpg`} alt="Add image"  className="table-image" /></td>
             <td className="small-column"><img src={`image-2.jpg`} alt="Add image"  className="table-image" /></td>
-            <td className="small-column"><img src="" alt="Add image" className="table-image" /></td>
+            <input type="file"  accept="image/*" />
           </tr>
         </tbody>
       </table>
+    
     </div>
     )
   }
 }
+
+
 

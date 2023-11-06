@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import ImgGrid from './components/ImgGrid';
 
 function App() {
   return (
    <div>
-    <h1>Welcome</h1>
+    <p>Selected Images: </p>
+    <button type="button" className="btn btn-danger">Delete Image</button>
+
     <ImgGrid/>
     </div>
   );
